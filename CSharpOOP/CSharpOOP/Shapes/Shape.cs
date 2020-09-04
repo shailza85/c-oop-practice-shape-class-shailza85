@@ -4,12 +4,10 @@ using System.Text;
 
 namespace CSharpOOP.Shapes
 {
-public class Shape      //Base class
+    public abstract class Shape
     {
-        //Create a “Shape” class with an Area property (public getter only) that must be overwritten by derived classes.
+        public abstract double Area { get; }
 
-      
-        public virtual double Area { get; }
-        
+        public abstract double Perimeter { get; }
     }
 }
