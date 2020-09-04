@@ -9,5 +9,14 @@ namespace CSharpOOP.Shapes
         public abstract double Area { get; }
 
         public abstract double Perimeter { get; }
+
+        public ColourValue Colour { get; set; }
+
+        public enum ColourValue
+        {
+            Red,
+            Green,
+            Blue
+        }
     }
 }

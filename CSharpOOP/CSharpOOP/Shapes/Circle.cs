@@ -6,22 +6,8 @@ namespace CSharpOOP.Shapes
 {
     public class Circle : Shape
     {
-        public override double Area
-        {
-            get
-            {
-                // Pi * r^2
-                return Math.PI * Math.Pow(Radius, 2);
-            }
-        }
-        public double Circumference
-        {
-            get
-            {
-                return 2 * Math.PI * Radius;
-            }
-        }
-
+        public override double Area => Math.PI * Math.Pow(Radius, 2);
+        public double Circumference => 2 * Math.PI * Radius;
         public override double Perimeter => Circumference;
         /*
         Same as:
@@ -35,9 +21,10 @@ namespace CSharpOOP.Shapes
 
         private double Radius { get; set; }
 
-        public Circle(double radius)
+        public Circle(double radius, ColourValue colour)
         {
             Radius = radius;
+            Colour = colour;
         }
     }
 }

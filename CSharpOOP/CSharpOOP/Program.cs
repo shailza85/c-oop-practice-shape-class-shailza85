@@ -1,8 +1,7 @@
 ﻿using CSharpOOP.Shapes;
 using System;
-using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace CSharpOOP
 {
@@ -10,9 +9,10 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
-           
-
-
+            Drawing myDrawing = new Drawing();
+            myDrawing.Draw(new Circle(4.2, Shape.ColourValue.Green));
+            Console.WriteLine(myDrawing);
         }
+
     }
 }
